@@ -1,0 +1,15 @@
+[workspace]
+members = [
+	"vrf",
+	"vrf-lib",
+	"contracts/jackpot-lottery",
+	"contracts/lucky-spinner",
+	"contracts/price-predict",
+	"contracts/up-or-down",
+]
+
+[workspace.dependencies]
+anchor-lang = "0.25"
+anchor-spl = "0.25"
+chainlink_solana = "1.0"
+vrf-lib = { path = "./vrf-lib" }

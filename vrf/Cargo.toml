@@ -1,0 +1,32 @@
+[package]
+name = "vrf-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anchor-client = "0.25"
+solana-transaction-status = "1.10"
+tokio = { version = "1.14", features = [ "full" ] }
+diesel = { version = "2.0", features = [ "mysql", "r2d2", "chrono" ] }
+diesel_migrations = "2.0"
+indexmap = "1.9"
+
+vrf = "0.2.4"
+vrf-lib = { workspace = true }
+
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+anyhow = "1.0"
+async-trait = "0.1"
+base64 = "0.13"
+chrono = "0.4"
+regex = "1.6"
+once_cell = "1.0"
+futures-util = "0.3"
+
+serde = { version = "1.0", features = [ "derive" ] }
+serde_with = "1.0"
+config = { version = "0.13", default-features = false, features = [ "toml" ] }
+borsh = "0.9"
+bs58 = "0.4"
